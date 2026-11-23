@@ -6,7 +6,15 @@ This repository contains an interactive portfolio recreation, not the original p
 
 **Problem:** The team needed to see who was booked for each market, what brands retailers were coming to see, and how sales compared across brands and markets.
 
-**What I built:** A web dashboard that combines market appointments, sales analysis, and seasonal reporting. In the original system, I used Google Apps Script to bring calendar and CRM data into Google Sheets and built the web interface in HTML, CSS, and JavaScript.
+**What I built:** A central dashboard for appointment tracking, sales analysis, and operational reporting. I built the interface in HTML, CSS, and JavaScript and used Google Apps Script to connect Calendar, Sheets, and the CRM.
+
+## How the workflow connects
+
+1. **Google Calendar → Google Sheets:** Appointment records sync into a structured spreadsheet.
+2. **Google Sheets → Dashboard:** The dashboard uses those records alongside sales and CRM data for filtering, analysis, and reporting.
+3. **Dashboard workflow → CRM:** The related integration syncs records to Close CRM. Teams can review the data in one place without using the dashboard as a replacement for the CRM.
+
+**Potential enhancement:** Let users update CRM records directly from the dashboard, with changes written back to the CRM. The public portfolio version is read-only with respect to external systems and includes no live connections.
 
 | View | What it shows |
 | --- | --- |
